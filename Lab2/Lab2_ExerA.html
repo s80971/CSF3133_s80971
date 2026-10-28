@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Faculty Programming Workshop 2026</title>
+</head>
+<body>
+
+	<!-- Header Section -->
+	<header>
+		<h1>Faculty Programming Workshop 2026</H1>
+		<p>Enhance your coding skills and build wxciting web projects!</p>
+	</header>
+	
+	<!-- Navigation Section -->
+	<nav>
+		<a href="#about">About Event</a> |
+		<a href="#schedule">Event Schedule</a> |
+		<a href="#register">Registration</a>
+    </nav>
+	
+	<!-- Section 1: About the Event -->
+	<section id="about">
+		<h2>About Event</h2>
+		
+		<article>
+			<h3>Keynote Speaker: Dr. Muhammad Fitri Bin Fazil</h3>
+			<p>Dr. Muhammad Fitri Bin Fazil is a senior software arcgitect with over 10 years of industry in full-stack development.</p>
+		</article>
+		
+		<article>
+			<h3>Hands-on Activity: Web Development Challenge</h3>
+			<p>Participants will work in group to design and structure interactive web pages using pure HTML.</p>
+		</article>
+    </section>
+	
+	<!-- Section 2: Event Schedule -->
+	<section id="schedule">
+		<h2>Event Schedule</h2>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Time</th>
+					<th>Activity</th>
+					<th>Venue</th>
+					<th>Person In Charge</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>08:30 AM - 09:00 AM</td>
+					<td>Registration &amp; Welcome Breakfast</td>
+					<td>Main Hall</td>
+					<td>Organising Committee</td>
+				</tr>
+				<tr>
+					<td>9:00 AM - 10.:30 AM</td>
+					<td>Opening Keynote</td>
+					<td>Auditorium</td>
+					<td>Dr. Muhammad Fitri Bin Fazil</td>
+				</tr>
+				
+				<tr>
+					<td>10:30 AM - 12:00 PM</td>
+					<td>HTML5 Deep Dive</td>
+					<td rowspan="2">Lab 1</td>
+					<td>Prof Puteri Nur Aqilah</td>
+				</tr>
+					
+				<tr>
+					<td>12:00 PM - 13:00 PM</td>
+					<td>Form Validation Workshop</td>
+					<td>Mr. Lee Jian Lin</td>
+				</tr>
+				
+				<tr>
+					<td>13:00 PM - 14:30 PM</td>
+					<td colspan="3">Lunch Break &amp; Networking</td>
+				</tr>
+				
+				<tr>
+					<td>14:30 PM - 16:30 PM</td>
+					<td>Hackathon Session</td>
+					<td>Lab 2</td>
+					<td>Organising Committee</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<!-- Section 3: Registration Form -->
+	<section id="register">
+		<h2>Registration Form</h2>
+		<form action="register.html" method="post">
+			<p>
+				<label for="fullname">Full Name: </label><br>
+				<input type="text" id="fullname" name="fullname" required>
+			</p>
+			
+			<p>
+				<label for="matric">Matric Number: </label><br>
+				<input type="text" id="matric" name="matric" required>
+			</p>
+			
+			<p>
+				<label for="email">E-mail: </label><br>
+				<input type="email" id="email" name="email" required>
+			</p>
+			
+			<p>
+				<label>Year of Study: </label><br>
+				<input type="radio" id="year1" name="year" value="1">
+				<label for="year1">Year 1</label>
+				<input type="radio" id="year2" name="year" value="2">
+				<label for="year1">Year 2</label>
+				<input type="radio" id="year3" name="year" value="3">
+				<label for="year1">Year 3</label>
+				<input type="radio" id="year4" name="year" value="4">
+				<label for="year1">Year 4</label>
+			</p>
+			
+			<p>
+				<label>Session To Join</label><br>
+				<input type="checkbox" id="session1" name="sessions" value="keynote">
+                <label for="session1">Opening Keynote</label><br>
+				<input type="checkbox" id="session2" name="sessions" value="html5">
+                <label for="session2">HTML5 Deep Dive</label><br>
+				<input type="checkbox" id="session3" name="sessions" value="hackathon">
+                <label for="session3">Hackathon Session</label><br>
+			</p>
+			
+			<p>
+				<label for="programme">Program / Faculty: </label><br>
+				<select id="programme" name="programme">
+					<option value="cs">Computer Science</option>
+					<option value="se">Software Engineering</option>
+                    <option value="it">Information Technology</option>
+                    <option value="ds">Data Science</option>
+				</select>
+			</p>
+			
+			<p>
+				<input type="submit" value="Register Now">
+			</p>
+		</form>
+	</section>
+	
+	<!-- Footer Section -->
+	<footer>
+		<p>Organiser: Faculty of Computer Science and Mathematics</p>
+		<p>Copyright &copy; 2026 UMT. All rights reserved.</p>
+	</footer>
+	
+</body>
+</html>
