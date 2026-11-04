@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Bakery</title>
+</head>
+<body>
+
+	<!-- Header -->
+	<div id="header">
+		<h1>CampusBake <span>Fresh & Delicious!</span></h1>
+	</div>
+
+	<!-- Navigation -->
+	<div id="nav">
+		<a href="#header">Home</a> |
+		<a href="#content">Order</a> |
+		<a href="#sidebar">Price List</a>
+	</div>
+
+	<!-- Content -->
+	<div id="content">
+
+		<h2>Welcome to CampusBake!</h2>
+
+		<p>
+			Welcome to <strong>CampusBake</strong>!
+			We provide <em>fresh and delicious</em> cakes.
+			Visit our <span>online bakery</span> to order.
+		</p>
+	
+		<h2>Our Products</h2>
+
+		<ul>
+			<li>Cupcakes</li>
+			<li>Cake Slices</li>
+			<li>Chocolate Cakes</li>
+		</ul>
+
+		<!-- Order Form and Price Calculator -->
+		<div id="order-form">
+	
+			<h2>Online Order Form</h2>
+
+			<form action="#" method="post"
+			oninput="document.getElementById('total').value = (Number(this.elements['cupcakes'].value) * 3) + (Number(this.elements['slices'].value) * 5)">
+
+				<label>Customer Name:</label>
+				<input type="text" name="customer" placeholder="Enter your name" required autofocus>
+				<br><br>
+
+				<label>Phone Number:</label>
+				<input type="tel" name="phone" required>
+				<br><br>
+
+				<label>Email:</label>
+				<input type="email" name="email" required>
+				<br><br>
+
+				<label>Pick-up Date:</label>
+				<input type="date" name="date">
+				<br><br>
+
+				<label>Pick-up Time:</label>
+				<input type="time" name="time">
+				<br><br>
+
+				<label>Flavour:</label>
+				<input type="text" name="flavour" list="flavours" placeholder="Choose flavour">
+
+				<datalist id="flavours">
+					<option value="Chocolate">
+					<option value="Vanilla">
+					<option value="Strawberry">
+					<option value="Blueberry">
+				</datalist>
+				<br><br>
+
+				<label>Icing Colour:</label>
+				<input type="color" name="colour">
+				<br><br>
+
+				<label>Sweetness Level:</label>
+				<input type="range" name="sweetness" min="1" max="5" step="1">
+				<br><br>
+
+				<h2>Price Calculator</h2>
+
+				<label>Cupcakes (RM3 each):</label>
+				<input type="number" name="cupcakes" min="0" value="0">
+				<br><br>
+
+				<label>Cake Slices (RM5 each):</label>
+				<input type="number" name="slices" min="0" value="0">
+				<br><br>
+
+				Total Price: RM
+				<output id="total" name="total" for="cupcakes slices">0</output>
+
+				<br><br>
+
+				<input type="submit" value="Submit Order">
+
+			</form>
+
+		</div>
+	</div>
+
+	<!-- Sidebar -->
+	<div id="sidebar">
+
+		<h2>Price List</h2>
+
+		<ul>
+			<li>Cupcakes - RM3.00</li>
+			<li>Cake Slices - RM5.00</li>
+			<li>Chocolate Cake - RM25.00</li>
+			<li>Vanilla Cake - RM20.00</li>
+		</ul>
+
+		<p>CampusBake&reg;</p>
+		<p>Orders &gt; 10 pieces get a free drink!</p>
+
+	</div>
+
+	<!-- Footer -->
+	<div id="footer">
+
+		<p>&copy; 2026 CampusBake. All rights reserved.</p>
+
+	</div>
+
+	<!-- Testing Observations:
+	1. Empty required fields: Browser asks user to fill in the fields.
+	2. Entering myemail: Browser rejects the invalid email address.
+	-->
+
+</body>
+</html>
