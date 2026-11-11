@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Visit Terengganu</title>
+	
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	
+	<!-- Internal CSS -->
+	<style>
+		h1 {
+			text-align: center; 
+		}
+		
+		h2 {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Header -->
+	<header>
+		<h1>VISIT TERENGGANU</h1>
+		<p>Discover Beautiful of Terengganu</p>
+		<a href="destination" class="explore-btn">
+		Explore Now 
+		</a>
+	</header>
+	
+	<!-- Navigation Bar -->
+	<nav>
+		<ul>
+			<li><a href="#destinations">Destinations</a></li>
+			<li><a href="#video">Video</a></li>
+			<li><a href="#trip">Trip Form</a></li>
+		</ul>
+	</nav>
+	
+	<!-- Destinations Section -->
+	<section id="destinations">
+		<h2>Popular Destinations</h2>
+		
+		<article class="card">
+			<img src="perhentian.jpg" alt="Perhentian Island">
+			<h3>Perhentian Island</h3>
+			<p>Enjoy the beautiful beaches and clear blue water.</p>
+			<p>
+				<span class="old-price">RM300</span>
+				<span class="price">RM200</span>
+			</p>
+		</article>
+		
+		<article class="card">
+			<img src="crystal.jpg" alt="Crystal Mosque">
+			<h3>Cyrstal Mosque</h3>
+			<p>Visit the beautiful Islamic architecture.</p>
+			<p>
+				<span class="old-price">RM200</span>
+				<span class="price">RM150</span>
+			</p>
+		</article>
+		
+		<article class="card">
+			<img src="redang.jpg" alt="Redang Island">
+			<h3>Redang Island</h3>
+			<p>Explore amazing marine life and coral reefs.</p>
+			<p>
+				<span class="old-price">RM400</span>
+				<span class="price">RM350</span>
+			</p>
+		</article>
+		
+		<p>Trip Seats Filled:</p>
+		<meter min="0" max="40" value="28"></meter>
+		28 out of 40 seats 
+	</section>
+	
+	<!-- Video Section -->
+	<section id="video">
+		<h2>Explore Terengganu</h2>
+		
+		<figure>
+			<video width="500" height="300" controls>
+				<source src="tourism.mp4" type="video/mp4">
+				Your browser does not support video.
+			</video>
+			
+			<figcaption>
+				Discover the beauty of Terengganu.
+			</figcaption>
+		</figure>
+	</section>
+	
+	<!-- Trip Form Section -->
+	<section id="trip">
+		<h2>Register Your Trip Interest</h2>
+		<form class="trip-form" action="#" method="post">
+			
+			<label>Name :</label>
+			<input type="text" name="name" required>
+			<label>E-mail :</label>
+			<input type="email" name="email" required>
+			
+			<p>Traveller Type :</p>
+			
+			<input type="radio" name="type" value="Student">
+			Student
+			
+			<input type="radio" name="type" value="Staff">
+			Staff
+			
+			<input type="radio" name="type" value="Public">
+			Public
+			
+			<p>Interests :</p>
+			
+			<input type="checkbox" name="interest" value="Islands">
+			Islands
+			
+			<input type="checkbox" name="interest" value="Food">
+			Food
+			
+			<input type="checkbox" name="interest" value="Culture">
+			Culture
+			
+			<input type="checkbox" name="interest" value="Nature">
+			Nature
+			
+			<br><br>
+			
+			<button type="submit">Submit</button>
+			
+		</form>
+	</section>
+			
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2026 Visit Terengganu</p>
+		
+		<address>
+			Contact Us :
+			<a href="mailto:visit@gmai.com">visit@gmail.com</a>
+		</address>
+	</footer>
+</body>
+</html>

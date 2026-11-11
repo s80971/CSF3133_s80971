@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-Café Campus offers delicious Malaysian food and freshly brewed coffee at affordable prices.">
+    <title>E-Café Campus</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+</head>
+<body>
+
+    <!--
+    ERROR CORRECTIONS FROM ORIGINAL CODE
+    Error 1: Wrong CSS comment syntax.
+    Error 2: list-style-type: no changed to none.
+    Error 3: Link states placed in wrong order.
+    Error 4: overlined changed to overline.
+    Error 5: Missing colon after color.
+    Error 6: #intro changed to .intro.
+    Error 7: Missing dot before highlight.
+    Error 8: Missing closing CSS brace.
+    Error 9: Menu link changed to #menu.
+    Error 10: Duplicate item IDs removed.
+    Error 11: Missing video controls attribute.
+    Error 12: Video MIME type changed to video/mp4.
+    Error 13: Incorrect closing h2 tag fixed.
+    Error 14: Invalid video section comment fixed.
+    Error 15: Menu layout improved for responsiveness.
+    -->
+
+	<!-- Header Section -->
+	<header id="home">
+        <div class="header-content">
+            <h1>E-Café Campus</h1>
+            <p>
+                Fresh Food and Delicious Coffee
+            </p>
+            <a href="#menu" class="explore-btn">
+                Explore Our Menu
+            </a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li>
+                <a href="#menu">Menu</a>
+            </li>
+            <li>
+                <a href="#video">Video</a>
+            </li>
+            <li>
+                <a href="#feedback">Feedback</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Promotion Banner -->
+    <section class="promotion">
+        <div class="promotion-content">
+            <span class="promo-badge">
+                LIMITED TIME OFFER
+            </span>
+            <h2>Special Promotion!</h2>
+            <p>
+                Enjoy delicious food at affordable prices.
+            </p>
+            <p>
+                Get your favourite meals today!
+            </p>
+            <a href="#menu" class="promo-btn">
+                View Today's Menu
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="section-heading">
+            <h2>Today's Menu</h2>
+            <p class="intro">
+                Freshly brewed coffee and local delights
+                every day.
+            </p>
+        </div>
+
+    <!-- Menu Container -->
+        <div class="menu-container">
+            <article class="menu-item">
+                <div class="menu-image">
+                    <img src="kopi.jpg" alt="A delicious cup of Malaysian Kopi Tarik" loading="lazy">
+                    <span class="menu-tag">Special Offer</span>
+                </div>
+
+                <div class="menu-content">
+                    <h3>Kopi Tarik</h3>
+                    <p>
+                        Freshly brewed Malaysian coffee
+                        with delicious creamy milk.
+                    </p>
+                    <div class="price">
+                        <span class="old-price">RM4.50</span>
+                        <span class="highlight">RM3.50</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <div class="menu-image">
+                    <img src="nasilemak.jpg" alt="Traditional Malaysian Nasi Lemak" loading="lazy">
+                    <span class="menu-tag">Best Seller</span>
+                </div>
+
+                <div class="menu-content">
+                    <h3>Nasi Lemak</h3>
+                    <p>
+                        Traditional Malaysian nasi lemak
+                        served with fragrant coconut rice,
+                        spicy sambal, crispy anchovies,
+                        peanuts and boiled egg.
+                    </p>
+                    <div class="price">
+                        <span class="old-price">RM6.50</span>
+                        <span class="highlight">RM5.00</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+    <!-- Video Section -->
+    <section id="video">
+        <div class="section-heading">
+            <h2>Watch Our Story</h2>
+            <p>
+                Discover the E-Café Campus experience.
+            </p>
+        </div>
+        <figure class="video-container">
+            <video controls preload="metadata">
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support
+                the video tag.
+            </video>
+            <figcaption>
+                Enjoy delicious food and coffee
+                at E-Café Campus!
+            </figcaption>
+        </figure>
+    </section>
+
+
+
+    <!-- Feedback Form Section -->
+    <section id="feedback">
+        <div class="section-heading">
+            <h2>Customer Feedback</h2>
+            <p>
+                We value your feedback!
+                Share your experience with us.
+            </p>
+        </div>
+        <form class="feedback-form" action="#" method="post">
+            <div class="form-group">
+                <label for="customer-name">Name :</label>
+                <input type="text" id="customer-name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="customer-email">E-mail :</label>
+                <input type="email" id="customer-email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+
+
+    <!-- Visit Type -->
+	<fieldset class="form-group">
+		<legend>Visit Type:</legend>
+		<div class="form-options">
+			<label class="option-label">
+				<input type="radio" name="visit" value="Dine-In" required>
+					Dine-In
+			</label>
+			<label class="option-label">
+				<input type="radio" name="visit" value="Take-Away">
+				Take-Away
+			</label>
+		</div>
+	</fieldset>
+
+    <!-- Favourite Item -->
+    <fieldset class="form-group">
+        <legend>Favourite Item:</legend>
+            <div class="form-options">
+                <label class="option-label">
+                <input type="checkbox" name="food[]" value="Coffee">
+                Coffee
+				</label>
+                <label class="option-label">
+                <input type="checkbox" name="food[]" value="Nasi Lemak">
+                Nasi Lemak
+                </label>
+                <label class="option-label">
+                <input type="checkbox" name="food[]" value="Cake">
+                Cake
+                </label>
+            </div>
+    </fieldset>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Feedback</button>
+		</form>
+	</section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>E-Café Campus</h3>
+            <p>
+                Fresh Food and Delicious Coffee
+            </p>
+            <address>
+			Contact Us:
+                <a href="mailto:ecafe@gmail.com">ecafe@gmail.com</a>
+            </address>
+            <p class="copyright">
+                &copy; 2026 E-Café Campus.
+                All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
