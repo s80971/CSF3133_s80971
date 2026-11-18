@@ -1,0 +1,286 @@
+
+/* GENERAL STYLING */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8F0;
+    margin: 0;
+    color: #3E2723;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #4E342E, #A47148);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* EXPLORE BUTTON */
+.explore-btn {
+    display: inline-block;
+    background-color: #F5DEB3;
+    color: #4E342E;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.explore-btn:hover {
+    background-color: white;
+}
+
+/* NAVIGATION BAR */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3E2723;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 16px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* LINK STATES */
+a:link {
+    color: #6D4C41;
+}
+
+a:visited {
+    color: #795548;
+}
+
+a:hover {
+    color: #D2691E;
+}
+
+a:active {
+    color: #BF360C;
+}
+
+/* NAVIGATION LINK COLORS */
+nav a:link,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #A47148;
+}
+
+nav a:active {
+    color: white;
+    background-color: #D2691E;
+}
+
+/* PROMOTION BANNER */
+.promotion {
+    background-color: #F5DEB3;
+    text-align: center;
+    padding: 20px;
+    color: #4E342E;
+}
+
+.promotion h2 {
+    color: #6D4C41;
+}
+
+/* MENU SECTION */
+#menu {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #6D4C41;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+/* INTRODUCTION */
+.intro {
+    font-size: 18px;
+    background-color: #F5DEB3;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* MENU CARDS */
+.menu-item {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #D7CCC8;
+    padding: 20px;
+    margin: 12px;
+    width: 35%;
+    min-width: 220px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transition: transform 0.3s;
+    vertical-align: top;
+}
+
+.menu-item:hover {
+    transform: translateY(-7px);
+}
+
+/* MENU IMAGES */
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    color: #6D4C41;
+    font-size: 23px;
+}
+
+/* PRICE STYLING */
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+    font-size: 22px;
+}
+
+/* VIDEO SECTION */
+#video {
+    background-color: #F5EBDD;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 15px;
+    color: #6D4C41;
+}
+
+/* FEEDBACK SECTION */
+#feedback {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.feedback-form {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #D7CCC8;
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.feedback-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.feedback-form input[type="radio"],
+.feedback-form input[type="checkbox"] {
+    margin: 10px 5px;
+}
+
+/* SUBMIT BUTTON */
+button {
+    background-color: #6D4C41;
+    color: white;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #A47148;
+}
+
+/* FOOTER */
+footer {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: #F5DEB3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+
+    .menu-item {
+        width: 90%;
+    }
+
+    .feedback-form {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav li {
+        display: block;
+    }
+}
